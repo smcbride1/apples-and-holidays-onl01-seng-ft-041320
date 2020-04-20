@@ -94,7 +94,7 @@ def format_words(word)
   elsif word_s.include?(" ")
     word_s.split(" ").map {|word| word.capitalize}.join(" ")
   else
-    word.capitalize
+    word_s.capitalize
   end
 end
 
