@@ -87,6 +87,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
+#Formats passed in strings and symbols to be parsed to string, capitalized, and have removed space/underscore.
 def format_words(word)
   word_s = word.to_s
   return word_s if word_s.upcase == word_s
@@ -98,9 +99,6 @@ def format_words(word)
     word_s.capitalize
   end
 end
-
-puts format_words("test word")
-all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
