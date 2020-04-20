@@ -88,10 +88,11 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def format_words(word)
-  if word.include?("_")
-    word.to_s.split("_").map {|word| word.capitalize}.join(" ")
-  elsif word.include?(" ")
-    word.to_s.split(" ").map {|word| word.capitalize}.join(" ")
+  word_s = word.to_s
+  if word_s.include?("_")
+    word_s.split("_").map {|word| word.capitalize}.join(" ")
+  elsif word_s.include?(" ")
+    word_s.split(" ").map {|word| word.capitalize}.join(" ")
   else
     word.capitalize
   end
