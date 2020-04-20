@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-def capitalize_words(word)
+def format_words(word)
   word.to_s.split("_").map {|word| word.capitalize}.join(" ")
 end
 
