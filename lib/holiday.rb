@@ -92,7 +92,7 @@ def capitalize_words(word)
   word.split("_").map {|word| word.caplitalize}.join(" ")
 end
 
-capitalize_words("test_word")
+puts capitalize_words("test_word")
 #all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)
