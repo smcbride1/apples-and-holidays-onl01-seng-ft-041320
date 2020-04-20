@@ -88,11 +88,12 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-def caplitalize_words(word)
+def capitalize_words(word)
   word.split("_").map {|word| word.caplitalize}.join(" ")
 end
 
-all_supplies_in_holidays(holiday_hash)
+capitalize_words(word)
+#all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
