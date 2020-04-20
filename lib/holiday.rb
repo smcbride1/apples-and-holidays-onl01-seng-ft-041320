@@ -89,7 +89,7 @@ end
 
 def format_words(word)
   word_s = word.to_s
-  return if word_s.upcase == word_s
+  return word_s if word_s.upcase == word_s
   if word_s.include?("_")
     word_s.split("_").map {|word| word.capitalize}.join(" ")
   elsif word_s.include?(" ")
