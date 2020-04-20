@@ -89,8 +89,7 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def caplitalize_words(word)
-  words = word.split("_").map {|word| word.caplitalize}
-  words
+  word.split("_").map {|word| word.caplitalize}.join(" ")
 end
 
 all_supplies_in_holidays(holiday_hash)
