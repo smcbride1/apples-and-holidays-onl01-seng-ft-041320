@@ -88,6 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 #Formats passed in strings and symbols to be parsed to string, capitalized, and have removed space/underscore.
+#Returns original string if whole string is already uppercase.
 def format_words(word)
   word_s = word.to_s
   return word_s if word_s.upcase == word_s
