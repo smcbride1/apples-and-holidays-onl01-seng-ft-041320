@@ -97,7 +97,7 @@ def format_words(word)
   end
 end
 
-puts format_words("test_word")
+puts format_words("test word")
 #all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)
